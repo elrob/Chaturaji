@@ -1,0 +1,160 @@
+
+
+
+table, td, a {
+	border-collapse:collapse;
+	color: #000;
+	font: normal normal 15px Verdana, Geneva, Arial, Helvetica, sans-serif
+}
+
+th, td {
+	padding: 2px 3px 3px 4px;	
+}
+
+
+/* define height and width of scrollable area. Add 16px to width for scrollbar          */
+div.tableContainer {
+	clear: both;
+/* 	padding: 20px; */
+	background: rgb(128, 128, 128); /* Fall-back for browsers that don't support rgba */
+    background: rgba(128, 128, 128, .3);
+
+ 	border: 15px solid 	gray;
+ 	border-radius:10px;
+	height: 600px;
+	overflow: auto;
+	width: 912px
+}
+
+/* Reset overflow value to hidden for all non-IE browsers. */
+html>body div.tableContainer {
+	overflow: hidden;
+	width: 896px
+}
+
+/* define width of table. IE browsers only                 */
+div.tableContainer table {
+	float: left;
+	width: 896px
+}
+
+/* define width of table. Add 16px to width for scrollbar.           */
+/* All other non-IE browsers.                                        */
+html>body div.tableContainer table {
+	width: 912px
+}
+
+/* set table header to a fixed position. WinIE 6.x only                                       */
+/* In WinIE 6.x, any element with a position property set to relative and is a child of       */
+/* an element that has an overflow property set, the relative value translates into fixed.    */
+/* Ex: parent element DIV with a class of tableContainer has an overflow property set to auto */
+thead.fixedHeader tr {
+	position: relative
+}
+
+/* set THEAD element to have block level attributes. All other non-IE browsers            */
+/* this enables overflow to work on TBODY element. All other non-IE, non-Mozilla browsers */
+html>body thead.fixedHeader tr {
+	display: block;
+}
+
+/* make the TH elements pretty */
+thead.fixedHeader th {
+	background: rgb(80,80,80);
+	font-weight: normal;
+	text-align: center;
+}
+
+/* make the A elements pretty. makes for nice clickable headers                */
+thead.fixedHeader a, thead.fixedHeader a:link, thead.fixedHeader a:visited {
+	color: #FFF;
+	display: block;
+	text-decoration: none;
+	width: 100%
+}
+
+
+/* make the A elements pretty. makes for nice clickable headers                */
+/* WARNING: swapping the background on hover may cause problems in WinIE 6.x   */
+thead.fixedHeader a:hover {
+	color: #FFF;
+	display: block;
+	text-decoration: none;
+	width: 100%
+}
+
+/* define the table content to be scrollable                                              */
+/* set TBODY element to have block level attributes. All other non-IE browsers            */
+/* this enables overflow to work on TBODY element. All other non-IE, non-Mozilla browsers */
+/* induced side effect is that child TDs no longer accept width: auto                     */
+html>body tbody.scrollContent {
+	display: block;
+ 	height: 600px; 
+	overflow: auto;
+	width: 100%
+}
+
+/* make TD elements pretty. Provide alternating classes for striping the table */
+
+tbody.scrollContent tr:nth-child(odd) {
+	background: rgb(255,255,255);
+	text-align: center;
+}
+
+tbody.scrollContent tr:nth-child(even) {
+	background: rgb(230,230,230);
+	text-align: center;
+}
+
+tbody.scrollContent tr:hover {
+	background: rgb(180,180,180);
+	text-align: center;
+}
+
+tbody.scrollContent tr:onclick {
+	background: rgb(255,180,180);
+	text-align: center;
+}
+
+/* define width of TH elements: 1st, 2nd, and 3rd respectively.          */
+/* Add 16px to last TH for scrollbar padding. All other non-IE browsers. */
+/* http://www.w3.org/TR/REC-CSS2/selector.html#adjacent-selectors        */
+html>body thead.fixedHeader th {
+	width: 150px
+}
+
+html>body thead.fixedHeader th + th {
+	width: 100px;
+	border-left: 2px solid rgb(153,153,153);
+}
+
+html>body thead.fixedHeader th + th + th {
+	width: 100px;
+	border-left: 2px solid rgb(153,153,153);	
+}
+
+html>body thead.fixedHeader th + th + th + th {
+	width: 512px;
+	border-left: 2px solid rgb(153,153,153);
+}
+
+/* define width of TD elements: 1st, 2nd, and 3rd respectively.          */
+/* All other non-IE browsers.                                            */
+/* http://www.w3.org/TR/REC-CSS2/selector.html#adjacent-selectors        */
+html>body tbody.scrollContent td {
+	width: 150px
+}
+
+html>body tbody.scrollContent td + td {
+	width: 102px
+}
+
+html>body tbody.scrollContent td + td + td {
+	width: 102px
+}
+
+html>body tbody.scrollContent td + td + td + td {
+	width: 498px;
+	padding: 2px 19px 3px 4px;
+}
+

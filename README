@@ -1,0 +1,9 @@
+Imperial Chaturaji Group Project
+
+Still a work in progress preparing it for public use.
+
+I designed and produced most of the UI.
+I have since gone through a lot of the server code.
+
+Use still relies on WebSockets (which some browsers still don't support) but I have a plan to migrate to the Atmosphere framework to avoid this.
+
