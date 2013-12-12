@@ -1557,7 +1557,7 @@ function initStage(images) {
                 data: {
                     p1: 0,
                     p2: 0,
-                    p3: 74,
+                    p3: 1,
                     p4: 0
                 }
             };
