@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'dumbledore';
+    src: url('./images/dum1.ttf');
+}
+
+body {
+	background-image: url('./images/old_paper_background.jpg');
+    background-repeat: repeat;
+    font-family:'dumbledore';
+    color:rgb(153,153,153);
+}
+
+h1{
+    font-family:'dumbledore';
+/*     font-size: 250%; */
+    margin-top:150px;
+    text-align: center;
+}
+
+#content {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	color:rgb(120,120,120);
+}
+
+#login_form {
+	display:none;
+	font-size:1.3em;
+}
+
+input {
+    font-family:'dumbledore';
+    color:rgb(70,70,70);
+    border:2px solid #ccc;
+    font-size:1em; 
+    width:160px;
+/*     min-height:20px; */
+    display:block;
+    margin-bottom:5px;
+    margin-top:8px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: none;
+    
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -o-border-radius:5px;
+    -ms-border-radius:5px;
+    border-radius:5px;
+}
+
+#login_button {
+	color: rgb(255, 255, 255); 
+ 	background-color: rgb(153, 153, 153); 
+}
+
+#noscriptmsg {
+	font-size:1.2em;
+}
+
+
