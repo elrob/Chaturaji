@@ -1661,10 +1661,10 @@ function initStage(images) {
         } else if (msgNo === 41) {
             //alert("Try to move a blue piece" + "\nthen try to move a green piece to another green piece square" + "\nthen move from G2 to H1");
         } else if (msgNo === 42) {
-            msg = {
-                type: 3,
-                data: null
-            };
+            //msg = {
+            //    type: 3,
+            //    data: null
+            //};
         } else if (msgNo === 44) {
             msg = {
                 type: 4,
@@ -1849,9 +1849,9 @@ function initStage(images) {
         msgNo++;
         if (msgNo < 93) {
             if (!msg) {
-                window.setTimeout(runTests, 2000);
+                window.setTimeout(runTests, 3000);
             } else if (msg.type === 2) {
-                window.setTimeout(runTests, 2000);
+                window.setTimeout(runTests, 3000);
             } else {
                 window.setTimeout(runTests, 3000);
             }
